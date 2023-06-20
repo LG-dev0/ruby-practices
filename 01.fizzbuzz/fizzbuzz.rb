@@ -1,14 +1,13 @@
 #!/bin/env ruby
-dates = 1..20
-dates.each do |x|
-	if x % 3 == 0  && x % 5 == 0
-		puts "FizzBuzz"
-	elsif x % 3 == 0
-		puts "Fizz"
-	elsif x % 5 == 0
-		puts "Buzz"
-	else
- 		puts x
-	end
-x += 1
+nums = 1..20
+nums.each do |n|
+  if n % 3 == 0 && n % 5 == 0
+    puts "FizzBuzz"
+  elsif n % 3 == 0
+    puts "Fizz"
+  elsif n % 5 == 0
+    puts "Buzz"
+  else
+    puts n
+  end
 end
