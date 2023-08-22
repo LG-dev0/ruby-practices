@@ -38,10 +38,11 @@ num.times  do
 end
 
 (day_first..day_end).each do |date| 
+  print date.mday.to_s.rjust(2)
   if date.saturday?
-    print date.mday.to_s.rjust(2) + "\n"
+    print "\n"
   else
-    print date.mday.to_s.rjust(2) + " "
+    print " "
   end
 end
 print "\n" 
